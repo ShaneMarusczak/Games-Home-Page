@@ -45,10 +45,19 @@ a {
 .linkBox {
 	border: 1px solid black;
 	border-radius: 7px;
-	width: 40vw;
-	height: 10vh;
+	width: 30vw;
 	text-align: center;
 	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+	.linkBox {
+		width: 50vw !important;
+	}
+
+	#githubicon {
+		top: 100px !important;
+	}
 }
 
 .linkBox:hover {
