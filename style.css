@@ -56,7 +56,13 @@ a {
 	}
 
 	#githubicon {
-		top: 100px !important;
+		position: relative;
+		top: auto;
+		right: auto;
+	}
+
+	h1 {
+		margin-bottom: 10px;
 	}
 }
 
