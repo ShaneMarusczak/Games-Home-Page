@@ -69,8 +69,10 @@ a {
 }
 
 .linkBox:hover {
-	background-color: gray;
+	background-color: lightgray;
 	cursor: pointer;
+	transform: translateY(-3px);
+	transition: 500ms;
 }
 
 .linkText {
