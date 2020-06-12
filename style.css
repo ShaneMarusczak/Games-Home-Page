@@ -3,12 +3,11 @@
 html {
 	background-color: cornsilk;
 	font-family: "Orbitron", sans-serif;
-	transition: 1.5s;
 }
 
 .darkBackground {
-	background-color: black;
-	color: azure;
+	background-color: #282828 !important;
+	color: azure !important;
 }
 
 .lightBackground {
@@ -29,15 +28,19 @@ h1 {
 	right: 10vw;
 	width: 60px;
 	height: 60px;
-	transition: 1.5s;
 	z-index: 0;
 	background-color: transparent;
 	border-radius: 40px;
 }
 
-#githubicon:hover {
+.upBounce {
 	transform: translateY(-5px);
-	background-color: azure;
+	transition: 1s;
+}
+
+.downBounce {
+	transform: translateY(0px);
+	transition: 1s;
 }
 
 a {
