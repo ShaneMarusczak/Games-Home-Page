@@ -44,6 +44,7 @@
 	(() => {
 		document.getElementById("battleshipWins").innerText = "Battleship Wins: " + Number(getCookie("playerwinsBattleship"));
 		document.getElementById("spaceInvadersWins").innerText = "Space Invaders Wins: " + Number(getCookie("playerWinsSpace"));
+		document.getElementById("sudokusCompleted").innerText = "Sudokus Completed: " + Number(getCookie("completedSudokuPuzzles"));
 		if (getCookie("darkMode") === "Y") {
 			setDarkMode();
 		} else {
