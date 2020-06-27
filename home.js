@@ -42,6 +42,8 @@
 	}
 
 	(() => {
+		document.getElementById("battleshipWins").innerText = "Battleship Wins: " + Number(getCookie("playerwinsBattleship"));
+		document.getElementById("spaceInvadersWins").innerText = "Space Invaders Wins: " + Number(getCookie("playerWinsSpace"));
 		if (getCookie("darkMode") === "Y") {
 			setDarkMode();
 		} else {
