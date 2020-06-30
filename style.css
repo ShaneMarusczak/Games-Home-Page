@@ -78,8 +78,6 @@ a {
 	transition: 500ms;
 }
 
-
-
 @media screen and (max-width: 1220px) {
 	.linkBox {
 		width: 50vw !important;
@@ -127,7 +125,6 @@ footer {
 #darkMode {
 	margin: 0 auto;
 	width: fit-content;
-	;
 }
 
 #darkMode:hover {
