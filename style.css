@@ -1,133 +1,132 @@
 @import url("https://fonts.googleapis.com/css?family=Orbitron&display=swap");
 
 html {
-	background-color: cornsilk;
-	font-family: "Orbitron", sans-serif;
+  background-color: cornsilk;
+  font-family: "Orbitron", sans-serif;
 }
 
 .darkBackground {
-	background-color: #282828 !important;
-	color: azure !important;
+  background-color: #282828 !important;
+  color: azure !important;
 }
 
 .lightBackground {
-	filter: invert(1);
+  filter: invert(1);
 }
 
 header {
-	text-align: center;
+  text-align: center;
 }
 
 h1 {
-	font-size: 3rem;
+  font-size: 3rem;
 }
 
 #winloss {
-	padding-left: 10px;
-	padding-right: 10px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	background-color: azure;
-	border: 1px solid black;
-	border-radius: 7px;
-	position: absolute;
-	top: 200px;
-	left: 5vw;
-	color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: azure;
+  border: 1px solid black;
+  border-radius: 7px;
+  position: absolute;
+  top: 200px;
+  left: 5vw;
+  color: black;
 }
 
 #githubicon {
-	position: absolute;
-	top: 40px;
-	right: 10vw;
-	width: 60px;
-	height: 60px;
-	z-index: 0;
-	background-color: transparent;
-	border-radius: 40px;
+  position: absolute;
+  top: 40px;
+  right: 10vw;
+  width: 60px;
+  height: 60px;
+  z-index: 0;
+  background-color: transparent;
+  border-radius: 40px;
 }
 
 .upBounce {
-	transform: translateY(-5px);
-	transition: 1s;
+  transform: translateY(-5px);
+  transition: 1s;
 }
 
 .downBounce {
-	transform: translateY(0px);
-	transition: 1s;
+  transform: translateY(0px);
+  transition: 1s;
 }
 
 a {
-	text-decoration: none;
-	color: black;
-	margin-bottom: 20px;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 20px;
 }
 
 #main {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .linkBox {
-	border: 1px solid black;
-	border-radius: 7px;
-	width: 30vw;
-	text-align: center;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	background-color: azure;
-	transition: 500ms;
+  border: 1px solid black;
+  border-radius: 7px;
+  width: 30vw;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: azure;
+  transition: 500ms;
 }
 
 @media screen and (max-width: 1220px) {
-	.linkBox {
-		width: 50vw !important;
-	}
+  .linkBox {
+    width: 50vw !important;
+  }
 
-	#githubicon {
-		position: relative;
-		top: auto;
-		right: auto;
-	}
+  #githubicon {
+    position: relative;
+    top: auto;
+    right: auto;
+  }
 
-	#winloss {
-		position: relative;
-		top: auto;
-		left: auto;
-		width: 50vw !important;
-		text-align: center;
-		padding: 0;
-	}
+  #winloss {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 50vw !important;
+    text-align: center;
+    padding: 0;
+  }
 
-	h1 {
-		margin-bottom: 10px;
-	}
+  h1 {
+    margin-bottom: 10px;
+  }
 }
 
 .linkBox:hover {
-	background-color: lightgray;
-	cursor: pointer;
-	transform: translateY(-1px);
+  background-color: lightgray;
+  cursor: pointer;
+  transform: translateY(-1px);
 }
 
 .linkText {
-	font-size: xx-large;
-
+  font-size: xx-large;
 }
 
 footer {
-	text-align: center;
+  text-align: center;
 }
 
 #updateText {
-	font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 #darkMode {
-	margin: 0 auto;
-	width: fit-content;
+  margin: 0 auto;
+  width: fit-content;
 }
 
 #darkMode:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
