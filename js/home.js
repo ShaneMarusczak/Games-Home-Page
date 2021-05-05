@@ -13,13 +13,6 @@
   }
 
   (() => {
-    document.getElementById("battleshipWins").innerText =
-      "Battleship Wins: " + Number(window.getCookie("playerwinsBattleship"));
-    document.getElementById("spaceInvadersWins").innerText =
-      "Space Invaders Wins: " + Number(window.getCookie("playerWinsSpace"));
-    document.getElementById("sudokusCompleted").innerText =
-      "Sudokus Completed: " +
-      Number(window.getCookie("completedSudokuPuzzles"));
     if (window.getCookie("darkMode") === "Y") {
       setDarkMode();
     } else {
