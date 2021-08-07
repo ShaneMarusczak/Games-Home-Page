@@ -1,8 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Orbitron&display=swap");
-
 html {
-  background-color: cornsilk;
-  font-family: "Orbitron", sans-serif;
+  background-color: #b0c4de;
+  font-family: "Roboto Mono", monospace;
 }
 
 .darkBackground {
@@ -36,6 +34,7 @@ h1 {
 .upBounce {
   transform: translateY(-5px);
   transition: 1s;
+  background-color: linen !important;
 }
 
 .downBounce {
@@ -61,9 +60,12 @@ a {
   border-radius: 7px;
   width: 30vw;
   text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: azure;
+  background-color: #faf0e6;
   transition: 500ms;
+}
+
+.boxShadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media screen and (max-width: 1220px) {
@@ -94,7 +96,7 @@ a {
 .linkBox:hover {
   background-color: lightgray;
   cursor: pointer;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
 .linkText {
