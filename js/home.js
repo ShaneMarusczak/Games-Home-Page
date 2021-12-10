@@ -1,17 +1,44 @@
 "use strict";
 (() => {
+
+  function sleep(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
+
+  function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+    var expires = "expires=" + d.toUTCString();
+    document.cookie =
+        cname + "=" + cvalue + ";" + expires + ";path=/;SameSite=Lax";
+  }
+
+  function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(";");
+    for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) === " ") {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) === 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
   function setDarkMode() {
     document.getElementsByTagName("html")[0].classList.add("darkBackground");
     document.getElementById("githubicon").classList.add("lightBackground");
-    window.setCookie("darkMode", "Y", 1);
+    setCookie("darkMode", "Y", 1);
   }
 
   function removeDarkMode() {
     document.getElementsByTagName("html")[0].classList.remove("darkBackground");
     document.getElementById("githubicon").classList.remove("lightBackground");
-    window.setCookie("darkMode", "N", 1);
+    setCookie("darkMode", "N", 1);
   }
-
   (() => {
     document.querySelectorAll(".linkBox").forEach((item) => {
       item.addEventListener("mouseover", () => {
@@ -25,13 +52,14 @@
       });
     });
 
-    if (window.getCookie("darkMode") === "Y") {
+    if (getCookie("darkMode") === "Y") {
       setDarkMode();
     } else {
       removeDarkMode();
     }
+
     document.getElementById("darkMode").addEventListener("click", () => {
-      if (window.getCookie("darkMode") === "N") {
+      if (getCookie("darkMode") === "N") {
         setDarkMode();
       } else {
         removeDarkMode();
@@ -44,8 +72,7 @@
     document.getElementById("githubicon").addEventListener("mouseleave", () => {
       document.getElementById("githubicon").classList.add("downBounce");
       document.getElementById("githubicon").classList.remove("upBounce");
-      window
-        .sleep(1000)
+      sleep(1000)
         .then(() =>
           document.getElementById("githubicon").classList.remove("downBounce")
         );
