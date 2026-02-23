@@ -35,6 +35,21 @@ h1 {
   border-radius: 40px;
 }
 
+#homeIcon {
+  position: absolute;
+  top: 40px;
+  left: 6vw;
+  width: 60px;
+  height: 60px;
+  z-index: 0;
+  background-color: transparent;
+}
+
+#homeIcon:hover {
+  transform: translateY(-5px);
+  transition: 1s;
+}
+
 .upBounce {
   transform: translateY(-5px);
   transition: 1s;
@@ -81,6 +96,12 @@ a {
     position: relative;
     top: auto;
     right: auto;
+  }
+
+  #homeIcon {
+    position: relative;
+    top: auto;
+    left: auto;
   }
 
   #winloss {
