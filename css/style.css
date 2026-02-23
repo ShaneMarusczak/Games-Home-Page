@@ -7,15 +7,6 @@ html {
   font-family: "Roboto Mono", monospace;
 }
 
-.darkBackground {
-  background-color: #282828 !important;
-  color: azure !important;
-}
-
-.lightBackground {
-  filter: invert(1);
-}
-
 header {
   text-align: center;
 }
@@ -136,11 +127,3 @@ footer {
   font-size: 0.8rem;
 }
 
-#darkMode {
-  margin: 0 auto;
-  width: fit-content;
-}
-
-#darkMode:hover {
-  cursor: pointer;
-}
