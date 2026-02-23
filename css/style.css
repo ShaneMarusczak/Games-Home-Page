@@ -43,11 +43,11 @@ h1 {
   height: 60px;
   z-index: 0;
   background-color: transparent;
+  transition: 1s;
 }
 
 #homeIcon:hover {
   transform: translateY(-5px);
-  transition: 1s;
 }
 
 .upBounce {
